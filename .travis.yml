@@ -1,0 +1,12 @@
+language: java
+jdk:
+  - openjdk16
+
+addons:
+  sonarcloud:
+    organization: "alpa-1996"
+    token: "472fd7c9b9fd11c7548520d64b5babf90d5373e4"
+
+script:
+  - ant build
+  - sonar-scanner
